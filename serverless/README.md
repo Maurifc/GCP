@@ -66,11 +66,6 @@ gcloud storage buckets add-iam-policy-binding gs://$BUCKET_NAME --member=allUser
 ```
 
 ### Serve static files
-Add API host to `index.html`
-```bash
-sed "s|{{API_HOST}}|http://localhost:3000|g" static/index.html.tpl > static/index.html
-```
-
 Copy HTML files to bucket
 ```bash
 gsutil cp static/*.html gs://$BUCKET_NAME/
