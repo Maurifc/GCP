@@ -1,12 +1,12 @@
 # Serverless + CDN
 
 This project is made up of:
-1x Cloud Function
-2x Cloud Run services
-1x Bucket (to host static files + CDN)
-1x Public IP address
-1x Load balancer with Cloud Run services as backends
-1x Cloud Armor policy to allow connections only from Brazil
+- 1x Cloud Function
+- 2x Cloud Run services
+- 1x Bucket (to host static files + CDN)
+- 1x Public IP address
+- 1x Load balancer with Cloud Run services as backends
+- 1x Cloud Armor policy to allow connections only from Brazil
 
 ## Diagram
 ![infrastructure diagram](diagram.png)
