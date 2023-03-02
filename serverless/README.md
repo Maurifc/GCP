@@ -9,11 +9,10 @@ This project is made up of:
 1x Cloud Armor policy to allow connections only from Brazil
 
 ## Diagram
-[[/diagram.png|Infraestructure diagram]]
-
+![infrastructure diagram](diagram.png)
 
 ## Before you begin
-1. Enable Cloud Run API
+Enable needed APIs
 ```bash
 gcloud services enable run.googleapis.com
 gcloud services enable cloudfunctions.googleapis.com
