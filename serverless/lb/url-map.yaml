@@ -1,0 +1,17 @@
+defaultService: https://www.googleapis.com/compute/v1/projects/idsvpc/global/backendBuckets/backend-public-bucket
+hostRules:
+- hosts:
+  - '*'
+  pathMatcher: service-1
+kind: compute#urlMap
+name: myapp-url-map
+pathMatchers:
+- defaultService: https://www.googleapis.com/compute/v1/projects/idsvpc/global/backendBuckets/backend-public-bucket
+  name: service-1
+  pathRules:
+  - paths:
+    - /service-1
+    service: https://www.googleapis.com/compute/v1/projects/idsvpc/global/backendServices/service-1-backend
+  - paths:
+    - /service-2
+    service: https://www.googleapis.com/compute/v1/projects/idsvpc/global/backendServices/service-2-backend
